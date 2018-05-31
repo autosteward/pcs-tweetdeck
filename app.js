@@ -27,7 +27,7 @@ app.get('/', function(req, res) {
 var pncfg = {
    ssl           : true,  //  enable TLS Tunneling over TCP
    publish_key   : "pub-c-84629785-6faf-4cfd-9fd5-542ab93e49ab",
-//    subscribe_key : "sub-c-4b92c960-64e5-11e8-b753-ce5efc28367f"
+   subscribe_key : "sub-c-4b92c960-64e5-11e8-b753-ce5efc28367f"
 };
 
 var twcfg = {
