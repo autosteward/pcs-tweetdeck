@@ -16,7 +16,8 @@
 
     <script>
 			var pubnub = PUBNUB.init({
-				subscribe_key: 'sub-c-8f1f79c2-6363-11e8-a470-425dbd502137'
+        subscribe_key: 'sub-c-8f1f79c2-6363-11e8-a470-425dbd502137',
+        ssl: true
 			});
 			pubnub.subscribe({
 				channel : 'pasco-tweets',
