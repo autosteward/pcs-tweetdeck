@@ -27,11 +27,11 @@ app.get('/', function(req, res) {
 var pncfg = {
    ssl           : true,  //  enable TLS Tunneling over TCP
    publish_key   : "pub-c-84629785-6faf-4cfd-9fd5-542ab93e49ab",
-   subscribe_key : "sub-c-4b92c960-64e5-11e8-b753-ce5efc28367f"
+//    subscribe_key : "sub-c-4b92c960-64e5-11e8-b753-ce5efc28367f"
 };
 
 var twcfg = {
-consumer_key:"CPKz5lp8bWjf6qWZPpAfgASKO",
+ consumer_key:"CPKz5lp8bWjf6qWZPpAfgASKO",
    consumer_secret:"Yc3qdVcHa7a7RTbSgIkMaAi9KFhahwvpTul5jB0g0i6DjqTcWP",
    access_token_key:"961613493207293952-d0fx7eGPRqqRjaclHG6nENIfru8EVmd",
    access_token_secret:"j6dpgMjni2iBocMbbaGAGvAekG6Un9LjQ5HijPMhIML6A"
