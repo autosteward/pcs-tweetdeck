@@ -1,0 +1,66 @@
+.card {
+    width: 18rem;
+    height: 22rem;
+    border: 1px #254889 solid;
+    border-radius: 8px;
+    
+}
+
+.card-img-top {
+    width: 6rem;
+    margin-bottom: 12px;
+    
+}
+
+.row {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 5%;
+    height: 5%;
+    float: left;
+    margin-left: 10px;
+}
+
+.card-text {
+    color: black;
+}
+
+.card-title {
+    color: #254889;
+    font-weight: bold;  
+}
+
+.title {
+    display: inline-block;
+    color: #E54D26;
+    font-weight: bold;
+    
+    
+
+}
+
+.jumbotron {
+    background-color: #91B03D;
+    margin-top: 15px;
+    padding: 32px; 
+}
+
+.jumbo-lead {
+    text-align: center;
+    color: white;
+}
+
+#tweet-list {
+    display: inline-block;
+    text-align: center;
+}
+
+#tweet-list-item {
+    display: inline-block;
+    margin: 30px;
+    vertical-align: top;
+}
+

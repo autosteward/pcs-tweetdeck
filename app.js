@@ -12,6 +12,8 @@ var port = process.env.PORT || 3000;
 // Init app
 var app = express();
 
+app.use(express.static(__dirname + '/public'));
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs')
 
@@ -26,8 +28,8 @@ app.get('/', function(req, res) {
 
 var pncfg = {
    ssl           : true,  //  enable TLS Tunneling over TCP
-   publish_key   : "pub-c-84629785-6faf-4cfd-9fd5-542ab93e49ab",
-   subscribe_key : "sub-c-4b92c960-64e5-11e8-b753-ce5efc28367f"
+   publish_key   : "pub-c-a1a90a3b-9029-4e4a-8e52-084face7596d",
+   subscribe_key : "sub-c-a87b7852-6521-11e8-902b-b2b3cb3accda"
 };
 
 var twcfg = {
@@ -72,7 +74,7 @@ function PubNubStream(cfg, channel) {
 
 util.inherits(PubNubStream, Writable);
 
-new TwitterStream(twcfg, "pascolead").pipe(new PubNubStream(pncfg, "pasco-tweets"));
+new TwitterStream(twcfg, "pascolead, ourghs17").pipe(new PubNubStream(pncfg, "rugby-tweets"));
 
 
 //start server
